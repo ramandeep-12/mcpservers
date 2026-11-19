@@ -1,0 +1,22 @@
+[project]
+name = "mcplangchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Raman Saini", email = "ramamsaini1297@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-groq>=1.2.1",
+    "langchain-mcp-adapters>=0.3.2",
+    "langgraph>=1.2.23",
+    "mcp>=1.30.0",
+]
+
+[project.scripts]
+mcplangchain = "mcplangchain:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
